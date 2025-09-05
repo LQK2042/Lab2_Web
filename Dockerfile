@@ -5,7 +5,7 @@ FROM tomcat:9.0-jdk21
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copy file WAR từ target vào Tomcat (ROOT.war để chạy trên /)
-COPY dist/Lab2-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
+COPY target/Lab2-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
 
 # Expose port cho Render
 EXPOSE 8080
