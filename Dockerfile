@@ -1,5 +1,5 @@
 # Sử dụng Tomcat 9 với JDK 24
-FROM tomcat:9.0-jdk24
+FROM tomcat:9.0.108-jdk21
 
 # Xóa webapps mặc định nếu muốn
 RUN rm -rf /usr/local/tomcat/webapps/*
